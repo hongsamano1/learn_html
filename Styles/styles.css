@@ -1,0 +1,73 @@
+
+
+/* 기본 선택자 */
+div {
+  background-color: pink;
+  color: blue;
+}
+
+p{
+  color: blueviolet;
+  background-color: aquamarine;
+}
+
+/* ID는 #으로 호츌 */
+#text-red {
+  color: red;
+  background-color: blue
+}
+
+
+/*  class는 . 으로 호출 
+.text-large {
+  color: white;
+  font-size: 30px;
+  background-color: yellowgreen 
+}
+  */
+
+
+
+/* li 태그이면서 class에 적용 */
+li.text-large {
+  color: blue;
+  font-size: 30px;
+  background-color: yellowgreen
+}
+
+
+
+/* 결합 선택자 자식 관계를 선택할때 공백으로 구분
+div img {
+  width: 150px;
+}
+
+div > a{
+background-color: blue;
+color: white;
+}
+*/
+
+div p ~a {
+background-color: wheat;
+color: black;
+}
+
+div img {
+  width: 150px;
+}
+
+/* 가상선택자 */
+.aaa{
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+/* 마우스 올렸을때 속성 변경 */
+.aaa:hover {
+  background-color: blueviolet;
+  color: black;
+  border-radius: 12px;
+  cursor: pointer;
+}
